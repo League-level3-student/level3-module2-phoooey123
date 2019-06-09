@@ -46,14 +46,12 @@ public class BogoSorter extends Sorter {
 	}
 
 	boolean isSorted(int[] array) {
-		boolean isSorted = true;
-
 		for (int i = 0; i < array.length - 1; i++) {
-			if (i > i + 1) {
-				isSorted = false;
-				break;
-			}
-		}
-		return isSorted;
+	        if (array[i] > array[i + 1]) {
+	            return false; 
+	        }
+	    }
+
+	    return true;
 	}
 }
