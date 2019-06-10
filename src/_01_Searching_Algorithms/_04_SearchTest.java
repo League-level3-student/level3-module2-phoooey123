@@ -11,14 +11,16 @@ class _04_SearchTest {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
-		_00_LinearSearch ls = new _00_LinearSearch();
-		assertEquals(-1, ls);
+		String[] check = {"apple", "carrot", "rug", "quiz"};
+		assertEquals(1, _00_LinearSearch.linearSearch(check, "carrot"));
 	}
 
 	@Test
 	public void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
+		int[] check = {1,2,3,4,7,9};
+		assertEquals(4, _01_BinarySearch.binarySearch(check, 0, 5, 7));
 	}
 	
 	@Test
