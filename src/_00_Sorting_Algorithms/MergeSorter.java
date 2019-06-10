@@ -63,9 +63,11 @@ public class MergeSorter extends Sorter {
 					display.updateDisplay();
 					// 15. increase j by 1
 					j++;
+				}
 					// 16. increase k by 1
 					k++;
-				}
+				
+			}
 			
 				// 17. make a while loop that runs while i is less than or equal to middle
 				while(i <= middle) {
@@ -76,7 +78,7 @@ public class MergeSorter extends Sorter {
 				k++;
 				i++;
 				}
-			}
+			
 		}
 	}
 
