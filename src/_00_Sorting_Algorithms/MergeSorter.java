@@ -33,9 +33,8 @@ public class MergeSorter extends Sorter {
 			mergeSort(array, middle + 1, high, display);
 			// 6. copy the elements from the array into the temporary array,
 			// but only the elements from low to high inclusive
-			for (int i = 0; i < arr.length; i++) {
-				arr[i] = array[low + i];
-				display.updateDisplay();
+			for (int i = 0; i < array.length; i++) {
+				arr[i] = array[i];
 			}
 
 			// 7. create three integers called i, j, and k and
@@ -67,7 +66,7 @@ public class MergeSorter extends Sorter {
 					// 16. increase k by 1
 					k++;
 				}
-
+			
 				// 17. make a while loop that runs while i is less than or equal to middle
 				while(i <= middle) {
 				// 18. set array at k equal to temp array at i
