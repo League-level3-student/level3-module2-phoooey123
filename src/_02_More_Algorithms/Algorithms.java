@@ -67,7 +67,7 @@ public class Algorithms {
 		return longest;
 	}
 	
-	public static void sortScores(List<Double> d) {
+	public static List<Double> sortScores(List<Double> d) {
 		for (int i = 0; i < d.size(); i++) {
 			for (int j = 0; j < d.size(); j++) {
 				if(d.get(i) < d.get(j)) {
@@ -77,7 +77,42 @@ public class Algorithms {
 				}
 			}
 		}
+		return d;
 		
 	}
 	
+	public static List<String> sortDNA(List<String> s) {
+		for (int i = 0; i < s.size(); i++) {
+			for (int j = 0; j < s.size(); j++) {
+				if(s.get(i).length() < s.get(j).length()) {
+					String switcheroo = s.get(i);
+					s.set(i, s.get(j));
+					s.set(j, switcheroo);
+					
+				}
+				
+			}
+		}
+		return s;
+	}
+	
+	public static List<String> sortWords(List<String> s) {
+		for (int i = 0; i < s.size()-1; i++) {
+			for (int j = 0; j < s.size(); j++) {
+				if(s.get(i).compareTo(s.get(j)) < 0) {
+					String switcheroo = s.get(i);
+					s.set(i, s.get(j));
+					s.set(j, switcheroo);
+				}
+			}
+			
+		}
+		return s;
+	}
 }
+
+	
+	
+	
+
+
