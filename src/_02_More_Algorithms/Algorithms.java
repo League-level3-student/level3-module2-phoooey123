@@ -100,9 +100,9 @@ public class Algorithms {
 		for (int i = 0; i < s.size()-1; i++) {
 			for (int j = 0; j < s.size(); j++) {
 				if(s.get(i).compareTo(s.get(j)) < 0) {
-					String switcheroo = s.get(i);
+					String switcherooo = s.get(i);
 					s.set(i, s.get(j));
-					s.set(j, switcheroo);
+					s.set(j, switcherooo);
 				}
 			}
 			
