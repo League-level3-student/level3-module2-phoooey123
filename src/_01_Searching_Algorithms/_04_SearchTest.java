@@ -27,11 +27,15 @@ class _04_SearchTest {
 	public void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
+		int[] check = {100,200,300,400,500,600};
+		assertEquals(1, _02_InterpolationSearch.interpolationSearch(check, 200));
 	}
 	
 	@Test
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		int[] check = {4, 7, 8, 12, 18, 22, 28, 30};
+		assertEquals(6, _03_ExponentialSearch.exponentialSearch(check, 28));
 	}
 }
